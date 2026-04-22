@@ -147,6 +147,7 @@ input[type="submit"].button.primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(37, 99, 235, 0.35);
   filter: brightness(1.08);
+  cursor: pointer;
 }
 
 .button.primary:active,
