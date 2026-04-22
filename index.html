@@ -26,7 +26,7 @@
     </header>
 
     <section id="banner">
-      <h2>The right step to your business success</h2>
+      <h2>We Build. We Grow. We Deliver.s</h2>
       <p>JKG Solutions helps businesses launch professional websites, manage updates, build stronger online visibility as well as find leads for your business.</p>
       <ul class="actions">
         <li><a href="contact.html" class="button primary">Strive for growth today!</a></li>
@@ -108,8 +108,9 @@
     <section id="cta">
       <h2>Ready to grow your business online?</h2>
       <p>Send us your email and we will reach out with the next best step.</p>
-      <form>
-        <input type="email" placeholder="Email Address">
+      <form name="cta-email" netlify>
+        <input type="hidden" name="form-name" value="cta-email">
+        <input type="email" name="email" placeholder="Email Address" required>
         <input type="submit" value="Contact Me" class="button primary">
       </form>
     </section>
