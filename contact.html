@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKG Solutions | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="container">
+        <h1><a href="index.html"><span class="brand-accent">JKG</span> Solutions</a></h1>
+        <nav id="nav">
+          <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="button">Get Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main" class="container">
+      <header class="box special">
+        <h2>Contact Us</h2>
+        <p>Tell us about your business goals and we will respond within one business day.</p>
+      </header>
+
+      <div class="box contact-grid">
+        <section>
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> info@jkgsolutions.co.za</p>
+          <tel><strong>Phone:</strong> 061 094 9651</tel>
+          <p><strong>Location:</strong> Gauteng, South Africa</p>
+          <p><strong>Hours:</strong> Mon-Fri, 08:00-17:00</p>
+        </section>
+
+        <section>
+          <form id="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Business Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+              <option value="">Select Service</option>
+              <option>Website Creation</option>
+              <option>Website Management</option>
+              <option>Business Growth Strategy</option>
+              <option>Full Package</option>
+            </select>
+            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+            <input type="submit" class="button primary" value="Send Message">
+          </form>
+          <div class="success-message">Thanks for contacting us. We will reach out shortly.</div>
+        </section>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© 2026 JKG Solutions. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
