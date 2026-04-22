@@ -21,17 +21,31 @@ function validateContactForm(event) {
   });
 
   if (valid) {
+    // Show success message
     const message = document.querySelector(".success-message");
     if (message) {
       message.style.display = "block";
     }
-    form.reset();
+
+    // Encode and submit the form data to Netlify
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => {
+      form.reset();
+    })
+    .catch((error) => {
+      console.error("Form submission error:", error);
+    });
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("#contact-form");
-  if (form) {
+  const form = document.querySelector('form[name="contact"]');
+    if (form) {
     form.addEventListener("submit", validateContactForm);
   }
 });
