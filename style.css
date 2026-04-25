@@ -276,6 +276,63 @@ input[type="submit"].button.primary:active {
   color: var(--muted);
 }
 
+.service-flow p {
+  color: var(--muted);
+}
+
+.flow-chart {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  flex: 1 1 210px;
+  max-width: 245px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  background: rgba(15, 22, 36, 0.75);
+}
+
+.flow-number {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  margin-bottom: 0.55rem;
+}
+
+.flow-step h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.flow-step p {
+  margin: 0.45rem 0 0;
+  font-size: 0.92rem;
+}
+
+.flow-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  color: var(--primary);
+  font-weight: 700;
+  padding: 0 0.15rem;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -372,6 +429,21 @@ textarea::placeholder {
   .grid-2,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .flow-chart {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flow-step {
+    max-width: 100%;
+  }
+
+  .flow-arrow {
+    align-self: center;
+    transform: rotate(90deg);
+    line-height: 1;
   }
 
   #cta form {
